@@ -1,7 +1,7 @@
 {
   "name": "require-me",
   "description": "Require modules with mocks and without cache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Oleg Istomin",
     "email": "tamtakoe@gmail.com"
