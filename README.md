@@ -28,7 +28,7 @@ var otherModule = requireMe('other-module', {
 })
 ```
 
-### API
+## API
 
 **Path** (String) - Module name or path
 
