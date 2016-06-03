@@ -1,0 +1,42 @@
+{
+  "name": "require-me",
+  "description": "Require modules with mocks and without cache",
+  "version": "0.0.1",
+  "author": {
+    "name": "Oleg Istomin",
+    "email": "tamtakoe@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tamtakoe/node-require-me.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "require",
+    "mock",
+    "clean",
+    "clear",
+    "cache",
+    "module"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "dependencies": {
+    "caller": "1.0.1",
+    "mock-require": "1.3.0",
+    "find-module-deps": "1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "2.4.5"
+  },
+  "scripts": {
+    "test": "mocha 'tests/**/*.test.js'"
+  }
+}
