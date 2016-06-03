@@ -9,17 +9,17 @@ Require module with mocks and clean cache
 ## Installation
 
 ```sh
-npm install node-require-me
+npm install require-me
 ```
 
 ## Usage
 
 ```js
-var requireMe = require('require-me');
+const requireMe = require('require-me');
 
-var otherDep1Mock = require('./mocks/other-module-dep1.mock');
+const otherDep1Mock = require('./mocks/other-module-dep1.mock');
 
-var otherModule = requireMe('other-module', {
+const otherModule = requireMe('other-module', {
     mocks: {
          '../lib/other-module-dep1': otherDep1Mock,
          './../lib/other-dep2': './mocks/other-dep2.mock',
@@ -30,15 +30,15 @@ var otherModule = requireMe('other-module', {
 
 ## API
 
-**Path** (String) - Module name or path
+**modulePath** (String) - Module name or path
 
-**Options** (Object)
+**options** (Object)
 
 * `mocks` (Object) - Map of mocks of module dependencies as {'module_dependency_path': 'mock_path'}.
                      You can use object or function instead of 'mock_path'.
                      It use [mock-require](https://www.npmjs.com/package/mock-require) for mocking
 * `pristine` (Boolean) - Clean npm cache before loading
-* `deep` (Boolean) - Clean npm npm cache for submodules
+* `deep` (Boolean) - Clean npm cache for submodules (true by default)
 
 **Return value** (Any): Module.exports
 

@@ -37,11 +37,11 @@ function getFullPath(modulePath, calledFrom) {
 
 /**
  * @param {String} modulePath
- * @param {Object} options
- * @param {Object}   mocks - map of mocks of module dependencies as {'module_dependency_path': 'mock_path'}.
+ * @param {Object} [options]
+ * @param {Object}   [mocks] - map of mocks of module dependencies as {'module_dependency_path': 'mock_path'}.
  *                           You can use object or function instead of 'mock_path'
- * @param {Boolean}  pristine - clean npm cache before loading
- * @param {Boolean}  deep - clean npm cache for submodules
+ * @param {Boolean}  [pristine] - clean npm cache before loading
+ * @param {Boolean}  [deep=true] - clean npm cache for submodules
  *
  * @returns {*} module
  */
