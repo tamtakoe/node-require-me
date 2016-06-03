@@ -1,7 +1,7 @@
 # node-require-me
 Require module with mocks and clean cache
 
-[![NPM version](https://img.shields.io/npm/v/require-me.svg)](https://npmjs.org/package/node-require-me)
+[![NPM version](https://img.shields.io/npm/v/require-me.svg)](https://npmjs.org/package/require-me)
 [![Build status](https://img.shields.io/travis/tamtakoe/node-require-me.svg)](https://travis-ci.org/tamtakoe/node-require-me)
 
 **Note:** This module works in browsers and Node.js >= 4.0
