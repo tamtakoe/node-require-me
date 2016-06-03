@@ -34,8 +34,10 @@ const otherModule = requireMe('other-module', {
 
 **options** (Object)
 
-* `mocks` (Object) - Map of mocks of module dependencies as {'module_dependency_path': 'mock_path'}.
-                     You can use object or function instead of 'mock_path'.
+* `mocks` (Object) - Map of mocks of module dependencies as `{'module_dependency_path': 'mock_path'}`.
+                     `module_dependency_path` resolves relatively original module,
+                     `mock_path` resolves relatively current file.
+                     You can use object or function instead of `mock_path`.
                      It use [mock-require](https://www.npmjs.com/package/mock-require) for mocking
 * `pristine` (Boolean) - Clean npm cache before loading
 * `deep` (Boolean) - Clean npm cache for submodules except external and system modules
