@@ -25,15 +25,15 @@ describe('require me', function() {
         expect(counter).to.equal(1);
     });
 
-    it('should require pristine dependencies of counter wrapper', function() {
+    it('should require cached dependencies of counter wrapper', function() {
         var counter = requireMe('./counter-wrapper', {pristine: true})();
 
-        expect(counter).to.equal(1);
+        expect(counter).to.equal(2);
     });
 
-    it('should require cached dependencies of counter wrapper', function() {
-        var counter = requireMe('./counter-wrapper', {pristine: true, deep: false})();
+    it('should require pristine dependencies of counter wrapper', function() {
+        var counter = requireMe('./counter-wrapper', {pristine: true, deep: true})();
 
-        expect(counter).to.equal(2);
+        expect(counter).to.equal(1);
     });
 });

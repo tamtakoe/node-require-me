@@ -38,7 +38,7 @@ const otherModule = requireMe('other-module', {
                      You can use object or function instead of 'mock_path'.
                      It use [mock-require](https://www.npmjs.com/package/mock-require) for mocking
 * `pristine` (Boolean) - Clean npm cache before loading
-* `deep` (Boolean) - Clean npm cache for submodules (true by default)
+* `deep` (Boolean) - Clean npm cache for submodules except external and system modules
 
 **Return value** (Any): Module.exports
 
