@@ -92,7 +92,13 @@ function requireMe(modulePath, options) {
         mockRequire(mock.path, mock.value);
     });
 
-    return require(fullModulePath);
+    const requiredModule = require(fullModulePath);
+
+    mocksArr.forEach(function(mock) {
+        mockRequire.stop(mock.path);
+    });
+
+    return requiredModule;
 }
 
 module.exports = requireMe;
