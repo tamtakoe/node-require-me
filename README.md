@@ -17,12 +17,12 @@ npm install require-me
 ```js
 const requireMe = require('require-me');
 
-const otherDep1Mock = require('./mocks/other-module-dep1.mock');
+const dependencyOneMock = require('./mocks/dependency-one.mock');
 
-const otherModule = requireMe('other-module', {
+const myModule = requireMe('./my-module', {
     mocks: {
-         '../lib/other-module-dep1': otherDep1Mock,
-         './../lib/other-dep2': './mocks/other-dep2.mock',
+         '../lib/dependency-one': dependencyOneMock,
+         './../lib/dependency-two': './mocks/dependency-two.mock',
     },
     pristine: true
 })
