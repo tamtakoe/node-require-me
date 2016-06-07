@@ -1,5 +1,5 @@
-# node-require-me
-Require module with mocks and clean cache
+# require-me
+Require uncached module with mocks
 
 [![NPM version](https://img.shields.io/npm/v/require-me.svg)](https://npmjs.org/package/require-me)
 [![Build status](https://img.shields.io/travis/tamtakoe/node-require-me.svg)](https://travis-ci.org/tamtakoe/node-require-me)

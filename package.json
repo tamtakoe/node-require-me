@@ -1,6 +1,6 @@
 {
   "name": "require-me",
-  "description": "Require modules with mocks and without cache",
+  "description": "Require uncached module with mocks",
   "version": "0.0.3",
   "author": {
     "name": "Oleg Istomin",
